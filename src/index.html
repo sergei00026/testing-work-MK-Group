@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Главная"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<div class="page__container">
+					<div data-tabs="570" class="tabs">
+						<nav data-tabs-titles class="tabs__navigation">
+							<button type="button" class="tabs__title _tab-active"><h2>Горный велосипед</h2></button>
+							<button type="button" class="tabs__title"><h2>Женский велосипед</h2></button>
+						</nav>
+						<div data-tabs-body class="tabs__content">
+							<div class="tabs__body">
+								<div class="tabs__main">
+									<div class="tabs__img">
+										<img src="@img/bicycle-01.png" alt="bicycle">
+									</div>
+									<div class="tabs__content">
+										<h1 class="tabs__heading">Велосипед STELS Navigator 510 HD 26 2022</h1>
+										<p class="tabs__desc">Данный велосипед с колесами 26 дюймов хорошо подходит высоким подросткам. Прогиб рамы и небольшой размер рамы расчитан на рост от 135 до 165 см.</p>
+										<p class="tabs__desc">Суммарный вес велосипеда был снижен до 16,9 кг, так как рама была изготовлена с учетом использования велосипеда подростками.</p>
+									</div>
+								</div>
+								<div class="tabs__specifications">
+									<h3 class="tabs__spec-title">Характеристики</h3>
+									<ul class="tabs__spec-list tabs__spec-list_man">
+										<li class="tabs__spec-item">Двойной обод</li>
+										<li class="tabs__spec-item">Колеса диаметром 26 дюймов</li>
+										<li class="tabs__spec-item">Алюминиевый сплав</li>
+										<li class="tabs__spec-item">Покрышки 26х1,95"</li>
+									</ul>
+								</div>
+								<div class="tabs__add-spec add-spec">
+									<h3 class="add-spec__title">Добавить характеристику</h3>
+									<form class="add-spec__body add-spec__body_man">
+										<input type="text" class="add-spec__inp-text add-spec__inp-text_man" placeholder="Алюминиевый сплав">
+										<button class="add-spec__btn btn btn__blue add-spec__btn_man">Добавить</button>
+									</form>
+								</div>
+								<div class="tabs__actives actives">
+									<button class="actives__btn btn btn__blue">Окей</button>
+									<button class="actives__btn btn btn__transparent">Отмена</button>
+								</div>
+							</div>
+							<div class="tabs__body tabs__body_woman">
+								<div class="tabs__main">
+									<div class="tabs__img">
+										<img src="@img/bicycle-01.png" alt="bicycle">
+									</div>
+									<div class="tabs__content">
+										<h1 class="tabs__heading">Велосипед SCHWINN Traveler women 2022</h1>
+										<p class="tabs__desc">Женский велосипед со стальной рамой Classic step-true lightweight позволяет девушкам без проблем его перемещать.</p>
+										<p class="tabs__desc">На данном велосипеде имеется 7 скоростей с переключателями от Shimano, а жесткая вилка обеспечивает отличную управляемость. Подходит для катания по асфальтированным поверхностям.</p>
+									</div>
+								</div>
+								<div class="tabs__specifications">
+									<h3 class="tabs__spec-title">Характеристики</h3>
+									<ul class="tabs__spec-list tabs__spec-list_woman">
+										<li class="tabs__spec-item">Двойной обод</li>
+										<li class="tabs__spec-item">Колеса диаметром 26 дюймов</li>
+										<li class="tabs__spec-item">Алюминиевый сплав</li>
+										<li class="tabs__spec-item">Покрышки 26х1,95"</li>
+									</ul>
+								</div>
+								<div class="tabs__add-spec add-spec">
+									<h3 class="add-spec__title">Добавить характеристику</h3>
+									<form class="add-spec__body add-spec__body_woman">
+										<input type="text" class="add-spec__inp-text add-spec__inp-text_woman" placeholder="Алюминиевый сплав">
+										<button class="add-spec__btn btn btn__blue add-spec__btn_woman">Добавить</button>
+									</form>
+								</div>
+								<div class="tabs__actives actives">
+									<button class="actives__btn btn btn__blue">Окей</button>
+									<button class="actives__btn btn btn__transparent">Отмена</button>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>
